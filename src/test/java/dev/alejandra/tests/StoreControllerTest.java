@@ -8,8 +8,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import dev.alejandra.model.Computer;
+import dev.alejandra.model.Store;
+import dev.alejandra.model.StoreController;
 
 public class StoreControllerTest {
+    
     private StoreController controller;
     private Store store;
 
