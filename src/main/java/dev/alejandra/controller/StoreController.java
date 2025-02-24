@@ -1,6 +1,9 @@
-package dev.alejandra.model;
+package dev.alejandra.controller;
 
 import java.util.List;
+
+import dev.alejandra.model.Computer;
+import dev.alejandra.model.Store;
 
 public class StoreController {
 
@@ -16,5 +19,9 @@ public class StoreController {
 
      public List<Computer> getComputers() {
         return store.getComputers();
+    }
+    
+    public void removeComputer(String brand) {
+        store.getComputers().removeIf(c -> c.getBrand().equalsIgnoreCase(brand));
     }
 }
